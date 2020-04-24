@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "The Days Creative website",
   "main": "index.js",
+  "homepage": "https://github.com/YosorTV/Days.git",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.config.js",
     "build": "webpack --config ./build/webpack.build.config.js",
