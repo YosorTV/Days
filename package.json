@@ -1,0 +1,46 @@
+{
+  "name": "days-website",
+  "version": "1.0.0",
+  "description": "The Days Creative website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --config ./build/webpack.dev.config.js",
+    "build": "webpack --config ./build/webpack.build.config.js",
+    "deploy": "gh-pages -d dist"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 3 version"
+  ],
+  "author": "YosorIT",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.9.5",
+    "autoprefixer": "^9.7.6",
+    "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.5.2",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^6.0.0",
+    "gsap": "^3.2.6",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "scrollmagic": "^2.0.7",
+    "scrollmagic-plugin-gsap": "^1.0.4",
+    "style-loader": "^1.1.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}

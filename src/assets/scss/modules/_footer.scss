@@ -1,0 +1,39 @@
+.nav-bar{
+    position: fixed;
+    top: 0;
+		left: 0;
+		background: $whiteColor;
+		@include size(100%, 100%);
+		@include d-strached(center, space-around);
+    z-index: 1;
+    opacity: 1;
+		clip-path: circle(50px at 100% -10%);
+		
+		.nav-links{
+			font-size: 4rem;
+			flex-basis: 30rem;
+
+			h3{
+				padding: 3rem 0rem;
+			}
+		}
+		.contact{
+			flex-basis: 30rem;
+
+			h2{
+				font-size: 3rem;
+				padding: 2rem 0rem;
+			}
+			p{
+				font-size: 1.5rem;
+				line-height: 2rem;
+		}
+	}
+}
+
+.cursor {
+	@include size(3rem, 3rem);
+	border: 2px solid $whiteColor;
+	border-radius: 50%;
+	position: absolute;
+}

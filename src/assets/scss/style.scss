@@ -1,0 +1,14 @@
+// UTILITIES
+@import "../scss/utils/mixins";
+@import "../scss/utils/reset";
+@import "../scss/utils/variables";
+// MODULES
+@import "../scss/modules/header";
+@import "../scss/modules/main";
+@import "../scss/modules/footer";
+
+body{
+    font-family: $fontMontserrat;
+    background: $mainBackground;
+    overflow-x: hidden;
+}

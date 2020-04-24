@@ -1,0 +1,19 @@
+@mixin size($width, $height) {
+	width: $width;
+	height: $height;
+}
+
+@mixin d-strached($center, $space) {
+	display: flex;
+	justify-content: $space;
+	align-items: $center;
+}
+
+@mixin d-column-center($center, $f_num, $f_basis) {
+	display: flex;
+	flex-direction: column;
+	justify-content: $center;
+	align-items: $center;
+	flex: $f_num;
+	flex-basis: $f_basis;
+}
