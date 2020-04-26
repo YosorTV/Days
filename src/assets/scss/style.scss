@@ -12,3 +12,7 @@ body{
     background: $mainBackground;
     overflow-x: hidden;
 }
+
+.scrollmagic-pin-spacer{
+    position: static !important;
+}

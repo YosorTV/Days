@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 2,
+  "workbench.settings.useSplitJSON": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "editor.wordWrap": "on",
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "breadcrumbs.enabled": true,
+  "projectManager.treeview.visible": false,
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true,
+}
