@@ -111,6 +111,11 @@ module.exports = {
 			filename: './index.html',
 			inject: true
 		}),
+		new HtmlWebpackPlugin({
+			template: `${PAGES_DIR}/fashion.html`,
+			filename: './fashion.html',
+			inject: true
+		}),
 		new CopyWebpackPlugin([{
 				from: `${PATHS.src}/${PATHS.assets}img`,
 				to: `${PATHS.assets}img`

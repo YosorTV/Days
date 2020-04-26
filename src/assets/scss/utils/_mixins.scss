@@ -9,6 +9,12 @@
 	align-items: $center;
 }
 
+@mixin d-center($center, $center) {
+	display: flex;
+	justify-content: $center;
+	align-items: $center;
+}
+
 @mixin d-column-center($center, $f_num, $f_basis) {
 	display: flex;
 	flex-direction: column;

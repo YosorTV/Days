@@ -1,0 +1,60 @@
+.fashion1,
+.fashion2,
+.fashion3 {
+	min-height: 90vh;
+	@include d-center(center);
+	margin: auto;
+	color: $whiteColor;
+	width: 70%;
+	margin-top: 5rem;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.fashion-image {
+	height: 70vh;
+	flex-basis: 30rem;
+
+	img {
+		@include size(100%, 100%);
+		object-fit: cover;
+	}
+}
+
+.fashion-text {
+	flex: 1;
+	position: relative;
+	flex-basis: 25rem;
+
+	h1{
+		font-size: 6rem;
+		padding: 5rem 0rem;
+	}
+
+	p{
+		font-size: 2rem;
+		padding: 2rem 2rem 0rem 0rem;
+		margin-bottom: 10rem;
+	}
+}
+
+.fashion1 h1 {
+	color: $spanFashionColor;
+}
+
+.fashion2 h1 {
+	color: $spanHikeColor;
+}
+
+.fashion3 h1 {
+	color: $spanMountainColor;
+}
+
+.fashion-nr{
+	position: absolute;
+	font-size: 15rem;
+	left: 50%;
+	bottom: 10%;
+	color: $whiteColor;
+	opacity: .6;
+}
