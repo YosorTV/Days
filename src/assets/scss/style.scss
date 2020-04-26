@@ -7,12 +7,16 @@
 @import "../scss/modules/main";
 @import "../scss/modules/footer";
 
-body{
-    font-family: $fontMontserrat;
-    background: $mainBackground;
-    overflow-x: hidden;
+body {
+	font-family: $fontMontserrat;
+	background: $mainBackground;
+	overflow-x: hidden;
 }
 
-.scrollmagic-pin-spacer{
-    position: static !important;
+body.hide{
+	overflow: hidden;
+}
+
+.scrollmagic-pin-spacer {
+	position: static !important;
 }

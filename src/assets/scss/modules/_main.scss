@@ -6,16 +6,19 @@ main {
 		@include d-strached(center, space-between);
 		color: $whiteColor;
 	}
+
 	.hero-img {
 		position: relative;
 		flex: 1;
 		flex-basis: 25rem;
 		overflow: hidden;
+
 		img {
 			@include size(100%, 100%);
 			object-fit: cover;
 		}
 	}
+
 	.hero-desc {
 		@include d-column-center(center, 1, 25rem);
 		padding: 5rem;
@@ -32,15 +35,19 @@ main {
 			color: $semiWhiteColor;
 		}
 	}
+
 	.mountain-span {
 		color: $spanMountainColor;
 	}
+
 	.hike-span {
 		color: $spanHikeColor;
 	}
+
 	.fashion-span {
 		color: $spanFashionColor;
 	}
+
 	.explore {
 		padding: 1rem 2rem;
 		background: none;
@@ -52,7 +59,6 @@ main {
 		align-self: flex-start;
 		cursor: pointer;
 	}
-
 	.reveal-img,
 	.reveal-text {
 		position: absolute;
@@ -60,5 +66,31 @@ main {
 		background: $mainBackground;
 		left: 0;
 		top: -15%;
+	}
+
+	.title{
+		position: relative;
+		overflow: hidden;
+		padding-bottom:1rem;
+		background: $mainBackground;
+		
+		.title-swipe{
+			@include size(100%, 100%);
+			top: 0;
+			left: 0;
+			position: absolute;
+			mix-blend-mode: darken;
+			transform: translateY(115%);
+		}
+
+		.t-swipe1{
+			background: $spanMountainColor;
+		}
+		.t-swipe2{
+			background: $spanHikeColor;
+		}
+		.t-swipe3{
+			background: $spanFashionColor;
+		}
 	}
 }

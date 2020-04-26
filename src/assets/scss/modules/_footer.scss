@@ -5,10 +5,8 @@
 		background: $whiteColor;
 		@include size(100%, 100%);
 		@include d-strached(center, space-around);
-    z-index: 1;
     opacity: 1;
 		clip-path: circle(50px at 100% -10%);
-		
 		.nav-links{
 			font-size: 4rem;
 			flex-basis: 30rem;
@@ -36,4 +34,27 @@
 	border: 2px solid $whiteColor;
 	border-radius: 50%;
 	position: absolute;
+	transform: translate(-50%, -50%);
+	pointer-events: none;
+	transition: all .5s ease-in-out;
+	transition-property: background, transform;
+	transform-origin: 75% 75%;
+}
+
+.cursor-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: .5rem;
+	transform: translate(-50%, -50%);
+}
+
+.nav-active{
+	background: rgb(86, 124, 228);
+	transform: scale(3);
+}
+
+.explore-active{
+	background: $whiteColor;
+	transform: scale(3);
 }

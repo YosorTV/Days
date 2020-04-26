@@ -1,14 +1,17 @@
 .nav-header {
+	position: relative;
 	min-height: 10vh;
 	font-size: 1rem;
 	width: 80%;
 	margin: auto;
-	padding: 2rem;
+	padding: 2rem 0rem;
+	z-index: 2;
 	@include d-strached(center, space-between);
 	h1 {
 		a#logo {
 			color: $whiteColor;
 			font-family: $fontAbril;
+			font-size: 2rem;
 	};
 };
 	.burger {
