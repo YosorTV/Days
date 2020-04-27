@@ -112,6 +112,16 @@ module.exports = {
 			inject: true
 		}),
 		new HtmlWebpackPlugin({
+			template: `${PAGES_DIR}/mountain.html`,
+			filename: './mountain.html',
+			inject: true
+		}),
+		new HtmlWebpackPlugin({
+			template: `${PAGES_DIR}/hike.html`,
+			filename: './hike.html',
+			inject: true
+		}),
+		new HtmlWebpackPlugin({
 			template: `${PAGES_DIR}/fashion.html`,
 			filename: './fashion.html',
 			inject: true

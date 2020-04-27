@@ -58,3 +58,26 @@
 	background: $whiteColor;
 	transform: scale(3);
 }
+
+.swipe{
+	position: fixed;
+	@include size(100%, 100%);
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+}
+
+.swipe1{
+	background: $spanHikeColor;
+	z-index: 5;
+}
+
+.swipe2 {
+	background: $spanMountainColor;
+	z-index: 4;
+}
+
+.swipe3 {
+	background: $spanFashionColor;
+	z-index: 3;
+}

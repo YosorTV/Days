@@ -12,12 +12,86 @@ body {
 	font-family: $fontMontserrat;
 	background: $mainBackground;
 	overflow-x: hidden;
+	position: relative;
 }
 
 body.hide{
 	overflow: hidden;
 }
 
+main{
+	position: absolute;
+}
+
 .scrollmagic-pin-spacer {
 	position: static !important;
+}
+
+@media screen and (max-width: 1024px) {
+	main{
+		width: 100%;
+		overflow-x: hidden;
+		.slide{
+			display: block;
+			width: 100%;
+			text-align: center;
+		}
+		.hero-img{
+			margin: 5rem;
+		}
+		.hero-desc{
+			padding: 0;
+
+			h2{
+				font-size: 1.6rem;
+				padding: 1rem 0rem;
+			}
+			p{
+				padding: 2rem 1rem;
+				font-size: 1rem;
+				line-height: 1.5rem;
+				text-align: center;
+			}
+		}
+		.explore{
+			width: 60%;
+			margin: auto;
+		}
+	}
+	.detail-slide{
+		width: 100%;
+		text-align: center;
+		flex-direction: column;
+	}
+	.fashion-text{
+		p{
+			margin-bottom: 5rem;
+		}
+		h1{
+			margin: 2rem 0rem;
+		}
+	}
+	.fashion-nr{
+		font-size: 8rem;
+	}
+	.nav-bar{
+		display: flex;
+		flex-direction: column;
+	}
+	.nav-links{
+		font-size: 2rem;
+		text-align: center;
+		margin-top: 14rem;
+	}
+	.contact {
+		margin-top: 7rem;
+		h2{
+			font-size: 3rem;
+			text-align: center;
+		}
+		p{
+			font-size: 1.2rem;
+			text-align: center;
+		}
+	}
 }
