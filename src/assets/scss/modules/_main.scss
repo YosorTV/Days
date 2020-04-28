@@ -59,21 +59,13 @@ main {
 		align-self: flex-start;
 		cursor: pointer;
 	}
-	.reveal-img,
-	.reveal-text {
-		position: absolute;
-		@include size(100%, 150%);
-		background: $mainBackground;
-		left: 0;
-		top: -15%;
-	}
 
 	.title{
 		position: relative;
 		overflow: hidden;
 		padding-bottom:1rem;
 		background: $mainBackground;
-		
+
 		.title-swipe{
 			@include size(100%, 100%);
 			top: 0;

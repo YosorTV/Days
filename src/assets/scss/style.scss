@@ -15,83 +15,113 @@ body {
 	position: relative;
 }
 
-body.hide{
+body.hide {
 	overflow: hidden;
 }
 
-main{
+main {
 	position: absolute;
 }
 
 .scrollmagic-pin-spacer {
 	position: static !important;
+	overflow: hidden !important;
 }
 
 @media screen and (max-width: 1024px) {
-	main{
-		width: 100%;
-		overflow-x: hidden;
-		.slide{
+	main {
+
+		.slide {
 			display: block;
 			width: 100%;
 			text-align: center;
 		}
-		.hero-img{
-			margin: 5rem;
+
+		.hero-img {
+			margin: 4rem;
 		}
-		.hero-desc{
+
+		.hero-desc {
 			padding: 0;
 
-			h2{
-				font-size: 1.6rem;
+			h2 {
+				font-size: 3rem;
 				padding: 1rem 0rem;
 			}
-			p{
-				padding: 2rem 1rem;
+
+			p {
+				padding: 1rem 5rem;
 				font-size: 1rem;
-				line-height: 1.5rem;
+				line-height: 2rem;
 				text-align: center;
 			}
 		}
-		.explore{
-			width: 60%;
+
+		.explore {
+			width: 75%;
 			margin: auto;
+			margin-top: 1rem;
 		}
 	}
-	.detail-slide{
-		width: 100%;
+
+	.detail-slide {
 		text-align: center;
 		flex-direction: column;
 	}
-	.fashion-text{
+
+	.fashion-text {
 		p{
-			margin-bottom: 5rem;
-		}
-		h1{
-			margin: 2rem 0rem;
+		font-size: 2rem;
+    padding: 2rem 2rem 0 0;
+    margin-bottom: 5rem;
+    line-height: 3rem;
 		}
 	}
-	.fashion-nr{
-		font-size: 8rem;
+
+	.fashion-nr {
+		font-size: 15rem;
+		position: absolute;
+    left: -10%;
+    bottom: -5%;
+    color: #fff;
+    opacity: .6;
 	}
-	.nav-bar{
+
+	.nav-bar {
 		display: flex;
 		flex-direction: column;
 	}
-	.nav-links{
-		font-size: 2rem;
+
+	.nav-links {
+		position: relative;
+		top: 15rem;
 		text-align: center;
-		margin-top: 14rem;
+
+		h3{
+			padding: 1.5rem 0rem !important;
+			font-size: 2rem;
+		}
 	}
+
 	.contact {
-		margin-top: 7rem;
-		h2{
-			font-size: 3rem;
+		margin-top: 10rem;
+
+		h2 {
+			font-size: 1.5rem;
 			text-align: center;
+			text-transform: capitalize;
 		}
-		p{
-			font-size: 1.2rem;
+
+		p {
+			font-size: 1.5rem;
+			line-height: 2rem;
 			text-align: center;
+			padding: 4rem 10rem;
 		}
 	}
+}
+
+
+@media screen and (max-width: 475px) {
+
 }

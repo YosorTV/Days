@@ -16,7 +16,7 @@ const activeCursor = ({ target }) => {
 		mouse.classList.add('nav-active');
 	} else {
 		mouse.classList.remove('nav-active');
-	}
+	};
 	if(target.classList.contains('explore')) {
 		mouse.classList.add('explore-active');
 		mouseTxt.innerText = 'Tap';
@@ -28,7 +28,7 @@ const activeCursor = ({ target }) => {
 	};
 };
 
-const navToggle = ({target}) => {
+const navToggle = ({ target }) => {
 	if(!target.classList.contains('active')) {
 		target.classList.add('active')
 			gsap.to('.line1', .5, {rotate: '45', y: 5, background: 'black'});
@@ -43,9 +43,8 @@ const navToggle = ({target}) => {
 			gsap.to('#logo', 1, {color: 'white'});
 			gsap.to('.nav-bar', 1, {clipPath: 'circle(50px at 100% -10%)' });
 			document.body.classList.remove('hide');
-	}
-}
-
+	};
+};
 // EVENT LISTENERS
 window.addEventListener('mousemove', cursor);
 window.addEventListener('mouseover', activeCursor);
