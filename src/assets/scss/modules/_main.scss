@@ -1,6 +1,6 @@
 main {
 	.slide {
-		min-height: 100vh;
+		min-height: 90vh;
 		margin: 0 auto 0 auto;
 		width: 80%;
 		@include d-strached(center, space-between);
@@ -63,7 +63,6 @@ main {
 	.title{
 		position: relative;
 		overflow: hidden;
-		padding-bottom:1rem;
 		background: $mainBackground;
 
 		.title-swipe{
